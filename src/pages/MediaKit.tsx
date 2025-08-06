@@ -296,6 +296,57 @@ const MediaKit: React.FC = () => {
             Partner with Africa's largest Web3 hackathon to reach thousands of developers, 
             innovators, and blockchain enthusiasts across the continent.
           </p>
+          
+          {/* Download Media Kit Section */}
+          <div className="mb-12">
+            <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-8 rounded-2xl shadow-2xl max-w-2xl mx-auto">
+              <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                📥 Download Complete Media Kit
+              </h2>
+              <p className="text-blue-100 mb-6 text-lg">
+                Get all official logos, assets, and press materials in one convenient package
+              </p>
+              <button 
+                onClick={() => {
+                  // Download the main logo files
+                  const files = [
+                    { url: '/mediakithederahacks/HH.png', name: 'HH.png' },
+                    { url: '/mediakithederahacks/HH_Black.png', name: 'HH_Black.png' },
+                    { url: '/mediakithederahacks/HH_white.png', name: 'HH_white.png' },
+                    { url: '/mediakithederahacks/Asset 1.svg', name: 'Asset_1.svg' },
+                    { url: '/mediakithederahacks/Asset 2.svg', name: 'Asset_2.svg' },
+                    { url: '/mediakithederahacks/Asset 3.svg', name: 'Asset_3.svg' },
+                    { url: '/mediakithederahacks/Asset 4.svg', name: 'Asset_4.svg' },
+                    { url: '/mediakithederahacks/Asset 5.svg', name: 'Asset_5.svg' },
+                    { url: '/mediakithederahacks/Asset 6.svg', name: 'Asset_6.svg' },
+                    { url: '/mediakithederahacks/Asset 7.svg', name: 'Asset_7.svg' },
+                    { url: '/mediakithederahacks/Asset 8.svg', name: 'Asset_8.svg' },
+                    { url: '/mediakithederahacks/Asset 10.svg', name: 'Asset_10.svg' },
+                    { url: '/mediakithederahacks/Asset 11.svg', name: 'Asset_11.svg' }
+                  ];
+                  
+                  // Download each file
+                  files.forEach((file, index) => {
+                    setTimeout(() => {
+                      const link = document.createElement('a');
+                      link.href = file.url;
+                      link.download = file.name;
+                      document.body.appendChild(link);
+                      link.click();
+                      document.body.removeChild(link);
+                    }, index * 100); // Stagger downloads by 100ms
+                  });
+                }}
+                className="bg-white text-blue-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 shadow-lg"
+              >
+                🎯 Download Media Kit
+              </button>
+              <p className="text-blue-200 text-sm mt-4">
+                Includes logos, brand assets, and press materials
+              </p>
+            </div>
+          </div>
+          
           <div className="bg-black/10 backdrop-blur-sm p-8 max-w-4xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
               <div>
