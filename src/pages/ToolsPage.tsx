@@ -570,6 +570,42 @@ const ToolsPage: React.FC = () => {
               </div>
             </div>
 
+            {/* OpenConAI Tools by Hashgraph Online */}
+            {activeTrack === 4 && (
+              <div className="mb-10">
+                <h4 className="text-xl font-bold text-yellow-400 mb-6 flex items-center">
+                  <Brain className="w-5 h-5 mr-2" />
+                  OpenConAI Tools by Hashgraph Online
+                </h4>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <div 
+                    className="bg-gray-800/80 p-6 border-2 transition-all duration-300 hover:scale-105 border-gray-600 hover:border-yellow-400 cursor-pointer"
+                    onClick={() => window.open("https://www.npmjs.com/package/hedera-agent-kit", '_blank', 'noopener,noreferrer')}
+                  >
+                    <h5 className="text-lg font-bold text-white mb-3">Hedera Agent Kit</h5>
+                    <p className="text-gray-300 text-sm">Build Hedera-powered AI agents in under a minute with LangChain, Vercel AI SDK, or MCP</p>
+                    <div className="mt-4 flex items-center">
+                      <span className="text-yellow-400 text-xs bg-yellow-600/20 px-3 py-1">
+                        Click to visit →
+                      </span>
+                    </div>
+                  </div>
+                  <div 
+                    className="bg-gray-800/80 p-6 border-2 transition-all duration-300 hover:scale-105 border-gray-600 hover:border-yellow-400 cursor-pointer"
+                    onClick={() => window.open("https://hedera.com/ai-studio", '_blank', 'noopener,noreferrer')}
+                  >
+                    <h5 className="text-lg font-bold text-white mb-3">Hedera AI Studio</h5>
+                    <p className="text-gray-300 text-sm">AI Studio is an open-source modular toolkit that simplifies the creation and deployment of verifiable AI agents on the Hedera network</p>
+                    <div className="mt-4 flex items-center">
+                      <span className="text-yellow-400 text-xs bg-yellow-600/20 px-3 py-1">
+                        Click to visit →
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+
             {/* Ecosystem Projects */}
             <div>
               <h4 className="text-xl font-bold text-blue-400 mb-6 flex items-center">
