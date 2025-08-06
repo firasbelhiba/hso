@@ -13,9 +13,6 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
-    rollupOptions: {
-      input: 'index.html',
-    },
   },
   optimizeDeps: {
     exclude: ['lucide-react'],
