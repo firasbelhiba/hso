@@ -36,8 +36,19 @@ const SponsorsCarousel: React.FC = () => {
           </p>
         </div>
 
-        {/* Carousel Container */}
-        <div className="relative">
+        {/* Desktop: Static Image */}
+        <div className="hidden md:block">
+          <div className="flex justify-center">
+            <img
+              src="/sponsorswall.png"
+              alt="Sponsors"
+              className="max-w-full h-auto object-contain"
+            />
+          </div>
+        </div>
+
+        {/* Mobile: Carousel Container */}
+        <div className="md:hidden relative">
           {/* Gradient Overlays for smooth fade effect */}
           <div className="absolute left-0 top-0 w-16 md:w-32 h-full bg-gradient-to-r from-[#171717] to-transparent z-10"></div>
           <div className="absolute right-0 top-0 w-16 md:w-32 h-full bg-gradient-to-l from-[#171717] to-transparent z-10"></div>
