@@ -202,7 +202,6 @@ const ToolsPage: React.FC = () => {
         featured: true
       },
       coreTools: [
-        { name: "Hedera Agent Kit", description: "Build Hedera-powered AI agents in under a minute with LangChain, Vercel AI SDK, or MCP", website: "https://www.npmjs.com/package/hedera-agent-kit" },
         { name: "Hedera Token Service (HTS)", description: "Managing AI-based economic systems and tokenized incentives", featured: true, website: "https://docs.hedera.com/hedera/sdks-and-apis/sdks/token-service" },
         { name: "Hedera Consensus Service (HCS)", description: "Secure, decentralized decision-making and event logging in AI applications", website: "https://docs.hedera.com/hedera/sdks-and-apis/sdks/consensus-service" },
         { name: "Hedera Smart Contract Service (HSCS)", description: "Automating actions in DePIN with AI logic integration", website: "https://hedera.com/smart-contract" },
