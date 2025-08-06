@@ -7,15 +7,16 @@ interface Sponsor {
 }
 
 const sponsors: Sponsor[] = [
-  { id: 1, name: "Orange Digital Center", logo: "/sponsors/logo_orangedigitalcenter.png" },
-  { id: 2, name: "White Logo", logo: "/sponsors/white_logo_1920x1080.png" },
-  { id: 3, name: "Image Removebg Preview", logo: "/sponsors/image-removebg-preview.png" },
-  { id: 4, name: "Image Removebg Preview 1", logo: "/sponsors/image-removebg-preview (1).png" },
-  { id: 5, name: "Sygnum Logo", logo: "/sponsors/Sygnum-Logo-Red-Icon_PNG-1.png" },
-  { id: 6, name: "Scenic Swisscoast", logo: "/sponsors/Scenic-Swisscoast_transparent-2.png" },
-  { id: 7, name: "THG Logo", logo: "/sponsors/THG_Logo_Symbol_RGB_White.png" },
-  { id: 8, name: "Esprit", logo: "/sponsors/esprit.webp" },
-  { id: 9, name: "G7 Logo", logo: "/sponsors/G7vw4YOs9H1Vgu0Cc4cqtdhPQeh1697437565592_200x200.png" }
+  { id: 1, name: "Hashgraph Online", logo: "/sponsors/hfo.png" },
+  { id: 2, name: "Orange Digital Center", logo: "/sponsors/logo_orangedigitalcenter.png" },
+  { id: 3, name: "White Logo", logo: "/sponsors/white_logo_1920x1080.png" },
+  { id: 4, name: "Image Removebg Preview", logo: "/sponsors/image-removebg-preview.png" },
+  { id: 5, name: "Image Removebg Preview 1", logo: "/sponsors/image-removebg-preview (1).png" },
+  { id: 6, name: "Sygnum Logo", logo: "/sponsors/Sygnum-Logo-Red-Icon_PNG-1.png" },
+  { id: 7, name: "Scenic Swisscoast", logo: "/sponsors/Scenic-Swisscoast_transparent-2.png" },
+  { id: 8, name: "THG Logo", logo: "/sponsors/THG_Logo_Symbol_RGB_White.png" },
+  { id: 9, name: "Esprit", logo: "/sponsors/esprit.webp" },
+  { id: 10, name: "G7 Logo", logo: "/sponsors/G7vw4YOs9H1Vgu0Cc4cqtdhPQeh1697437565592_200x200.png" }
 ];
 
 const SponsorsCarousel: React.FC = () => {
